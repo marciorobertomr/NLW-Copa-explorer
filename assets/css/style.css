@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ajusta o tamanho de todas as caixas para não ultrapassar o definido */
+}
+
+/* Seleciona a raiz do HTML */
+:root {
+    --card-color-primary: #f7dd43;
+    --card-title-border-color: #746615;
+    --card-bg-color: #1D1C19;
+    --bg: url(../bg-yellow.svg);
+}
+
+body.blue {
+    --card-color-primary: #338AF3;
+    --card-title-border-color: #338AF3;
+    --card-bg-color: #202024;
+    --bg: url(../bg-blue.svg);
+}
+
+body.green {
+    --card-color-primary: #047C3F;
+    --card-title-border-color: #047C3F;
+    --card-bg-color: #1A1F1B;
+    --bg: url(../bg-green.svg);
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    background-color: #121214;
+    background-image: var(--bg);
+    background-position: top center; /* X - Y */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body * { /* O * significa que vai pegar todos os elementos dentro de body */
+    font-family: 'Roboto', sans-serif;
+}
+
+#app {
+    width: fit-content;
+    margin: auto;
+    padding-top: 52px;
+}
+
+header {
+    margin-bottom: 63px;
+    text-align: center;
+}
+
+#cards {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.card {
+    padding: 32px 23px;
+    text-align: center;
+    background: var(--card-bg-color);
+    border-bottom: 2px solid var(--card-color-primary);
+    border-radius: 6px;
+}
+
+.card h2 {
+    display: flex; /* Faz com que os filhos da caixa fiquem colados um no outro, além de desbloquear a propriedade gap */
+    gap: 16px;
+    justify-content: center;
+    align-items: center; /* Alinha os itens ao centro (posições X e Y) */
+    padding: 8px 16px;
+    border: 1px solid var(--card-title-border-color);
+    border-radius: 6px;
+    width: fit-content;
+    margin-inline: auto;
+    margin-bottom: 53px;
+    color: #f7dd43;
+}
+
+.card h2 span {
+    color: #e1e1e6;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+/* A parametrização baixo, serve para dar o espaço entre as listas e manter a linha de separação no centro (li + li) */
+.card ul {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 270px;
+}
+
+.card ul li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Aplica espaço entre os elementos*/   
+}
+
+.card ul li + li { /* O mais, pega o li que tem após um li */
+    padding-top: 24px;
+    border-top: 1px solid #323238;
+}
+
+.card ul li strong {
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 125%;
+    color: #e1e1e6;
+}
+
+/* Aplicações de efeitos no código */
+
+/* O hover significa que o efeito será aplicado quando passar o mouse em cima */
+.card h2:hover,
+.card ul li strong:hover,
+.card ul li img:hover {
+    transform: scale(1.1);
+}
+
+.card h2,
+.card ul li strong,
+.card ul li img {
+    transition: transform 0.3s;
+}
+
+.card {
+    opacity: 0;
+    animation: appear 1s forwards;
+}
+
+/* Aplicação de efeitos se aplicado direto no CSS, ao invés de ser por JavaScript */
+/* .card:nth-child(1) {
+    animation-delay: 1s;
+}
+
+.card:nth-child(2) {
+    animation-delay: 2s;
+}
+
+.card:nth-child(3) {
+    animation-delay: 3s;
+} */
+
+/* Animações */
+
+@keyframes appear {
+    0% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Responsividade */
+/* @media vai tratar de forma que, se estiver acima de 700px, irá aplicar a alteração */
+@media (min-width: 700px) {
+    #cards {
+        max-width: 670px;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
