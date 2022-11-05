@@ -36,8 +36,8 @@ body {
     background-color: #121214;
     background-image: var(--bg);
     background-position: top center; /* X - Y */
-    background-repeat: no-repeat;
-    background-size: cover;
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
 }
 
 body * { /* O * significa que vai pegar todos os elementos dentro de body */
@@ -87,6 +87,13 @@ header {
     background: var(--card-bg-color);
     border-bottom: 2px solid var(--card-color-primary);
     border-radius: 6px;
+}
+
+.title {
+    color: #e1e1e6;
+    font-size: 14px;
+    text-transform: uppercase;
+    border: 1px solid red;
 }
 
 .card h2 {
@@ -146,7 +153,7 @@ header {
 .card h2:hover,
 .card ul li strong:hover,
 .card ul li img:hover {
-    transform: scale(1.1);
+    transform: scale(1.2);
 }
 
 .card h2,

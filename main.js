@@ -54,7 +54,7 @@ function createCard(date, day, games) {
 // ${createCard()} chama a função e recebe o retorno dela
 // querySelector busca o termo dentro do html e ao localizar, puxa sua função, substituindo pelo declarado a seguir
 document.querySelector('#cards').innerHTML = 
-        createCard('20/11', "domingo", 
+        createCard('20/11', "domingo",
             createGame("qatar", "13:00", "ecuador")
         ) +
         createCard('21/11', "segunda", 
@@ -115,4 +115,57 @@ document.querySelector('#cards').innerHTML =
             createGame("australia", "12:00", "denmark") +
             createGame("poland", "16:00", "argentina") +
             createGame("saudi-arabia", "16:00", "mexico")
+        ) +
+        createCard('01/12', "quinta", 
+            createGame("croatia", "12:00", "belgium") +
+            createGame("canada", "12:00", "morocco") +
+            createGame("japan", "16:00", "spain") +
+            createGame("costa rica", "16:00", "germany")
+        ) +
+        createCard('02/12', "sexta", 
+            createGame("south korea", "12:00", "portugal") +
+            createGame("ghana", "12:00", "uruguay") +
+            createGame("serbia", "16:00", "switzerland") +
+            createGame("cameroon", "16:00", "brazil")
+        ) +
+        // Oitavas de finais
+        createCard('03/12', "sábado", 
+            createGame("undefined", "12:00", "undefined") +
+            createGame("undefined", "16:00", "undefined")
+        ) +
+        createCard('04/12', "domingo", 
+            createGame("undefined", "12:00", "undefined") +
+            createGame("undefined", "16:00", "undefined")
+        ) +
+        createCard('05/12', "segunda", 
+            createGame("undefined", "12:00", "undefined") +
+            createGame("undefined", "16:00", "undefined")
+        ) +
+        createCard('06/12', "terça", 
+            createGame("undefined", "12:00", "undefined") +
+            createGame("undefined", "16:00", "undefined")
+        ) +
+        // Quartas de finais
+        createCard('09/12', "sexta", 
+            createGame("undefined", "12:00", "undefined") +
+            createGame("undefined", "16:00", "undefined")
+        ) +
+        createCard('10/12', "sábado", 
+            createGame("undefined", "12:00", "undefined") +
+            createGame("undefined", "16:00", "undefined")
+        ) +
+        // Semi-finais
+        createCard('13/12', "terça", 
+            createGame("undefined", "16:00", "undefined")
+        ) +
+        createCard('14/12', "quarta", 
+            createGame("undefined", "16:00", "undefined")
+        ) +
+        // Competição pelo terceiro lugar
+        createCard('17/12', "sábado", 
+            createGame("undefined", "12:00", "undefined")
+        ) +
+        // Final
+        createCard('18/12', "domingo", 
+            createGame("undefined", "12:00", "undefined")
         )
