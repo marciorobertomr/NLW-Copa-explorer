@@ -1,3 +1,31 @@
+let i = 0;
+function changeTheme (theme) {
+    // alert(tema.id);
+
+    if (i == 0) {
+        document.body.classList.toggle("blue");
+        i++;
+    } else if (i == 1) {
+        document.body.classList.remove('blue');
+        document.body.classList.toggle("green");
+        i++;
+    } else {
+        document.body.classList.remove('green');
+        i = 0;
+    }
+
+    // if (theme.id == "blue") {
+    //     document.body.classList.remove('green');
+    //     document.body.classList.toggle("blue"); //Cria uma classe para o body do html
+    // } else if (theme.id == "green") {
+    //     document.body.classList.remove('blue');
+    //     document.body.classList.toggle("green"); //Cria uma classe para o body do html
+    // } else {
+    //     document.body.classList.remove('blue');
+    //     document.body.classList.remove('green');
+    // }
+}
+
 function createGame(player1, hour, player2) {
     return `
         <li>
