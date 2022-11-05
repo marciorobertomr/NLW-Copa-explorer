@@ -123,6 +123,11 @@ header {
     justify-content: space-between; /* Aplica espaço entre os elementos*/   
 }
 
+.card ul li img {
+    height: 51px;
+    width: 50px;
+}
+
 .card ul li + li { /* O mais, pega o li que tem após um li */
     padding-top: 24px;
     border-top: 1px solid #323238;
