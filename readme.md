@@ -45,3 +45,4 @@ Esse projeto está sob a licença MIT.
 ---
 
 Feito com ♥ by Rocketseat :wave: [Participe da nossa comunidade!](https://discord.gg/rocketseat)
+Fonte de informações para os jogos: [Google](https://www.google.com/search?q=google+calendar+copa&sxsrf=ALiCzsbWsanxmlhUgAXVWvg9FN3JZxm1wQ%3A1667416604672&ei=HMJiY_LKKO2b1sQPmcS66AU&ved=0ahUKEwjyyKfzmpD7AhXtjZUCHRmiDl0Q4dUDCA8&uact=5&oq=google+calendar+copa&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIFCAAQgAQyBQgAEIAEMggIABCABBDLATIICAAQgAQQywEyCAgAEIAEEMsBMggIABCABBDLATIICAAQgAQQywEyCAgAEIAEEMsBMggIABCABBDLATIICAAQgAQQywE6CggAEEcQ1gQQsAM6BwgAELADEEM6CwgAEIAEELEDEIMBSgQIQRgASgQIRhgAUOADWKQIYNEJaAFwAXgAgAHEAYgB8wWSAQMwLjSYAQCgAQHIAQrAAQE&sclient=gws-wiz-serp#sie=lg;/m/0fp_8fm;2;/m/030q7;mt;fp;1;;;)
