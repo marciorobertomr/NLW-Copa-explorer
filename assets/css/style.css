@@ -48,6 +48,7 @@ body * { /* O * significa que vai pegar todos os elementos dentro de body */
     width: fit-content;
     margin: auto;
     padding-top: 52px;
+    padding-bottom: 52px;
 }
 
 header {
@@ -56,7 +57,7 @@ header {
 }
 
 .tema {
-    /* display: flex; */
+    display: flex;
     position: absolute;
     top: 10px;
     right: 10px;
@@ -72,7 +73,6 @@ header {
     border: 2px solid var(--card-title-border-color);
     cursor: pointer;
     color: #e1e1e6;
-    
 }
 
 #cards {
@@ -93,14 +93,14 @@ header {
     color: #e1e1e6;
     font-size: 14px;
     text-transform: uppercase;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 .card h2 {
-    display: flex; /* Faz com que os filhos da caixa fiquem colados um no outro, além de desbloquear a propriedade gap */
+    display: flex;
     gap: 16px;
     justify-content: center;
-    align-items: center; /* Alinha os itens ao centro (posições X e Y) */
+    align-items: center; /*Alinha os itens ao centro (posições X e Y)*/
     padding: 8px 16px;
     border: 1px solid var(--card-title-border-color);
     border-radius: 6px;

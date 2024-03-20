@@ -1,4 +1,3 @@
-
 <h1 align="center"> NLW Copa 2022 </h1>
 
 <p align="center">
